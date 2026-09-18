@@ -73,6 +73,9 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
+  # Code smell detection [https://github.com/troessner/reek]
+  gem "reek", require: false
+
   # A Ruby Gem that adds annotations to your Rails models and route files.
   gem "annotaterb"
 end
