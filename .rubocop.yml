@@ -4,6 +4,14 @@
 # Omakase Ruby styling for Rails
 inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 
+plugins:
+  - rubocop-minitest
+  - rubocop-performance
+  - rubocop-thread_safety
+
+AllCops:
+  NewCops: enable
+
 # Overwrite or add rules to create your own house style
 #
 # # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
@@ -13,3 +21,37 @@ inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 Style/FrozenStringLiteralComment:
   Enabled: true
   EnforcedStyle: always_true
+
+Lint:
+  Enabled: true
+
+Security:
+  Enabled: true
+
+Performance:
+  Enabled: true
+
+Minitest:
+  Enabled: true
+
+ThreadSafety:
+  Enabled: true
+
+# Test readability is covered by the guidelines in docs/llms/testing.md; a count
+# of assertions per test is not a useful signal here.
+Minitest/MultipleAssertions:
+  Enabled: false
+
+# Avo passes fields, current_user and resource to every action and filter whether
+# or not it uses them, so the keyword names are part of the signature.
+Lint/UnusedMethodArgument:
+  AllowUnusedKeywordArguments: true
+
+# The rubyandrailsinfo importer is a single-threaded, run-once script whose
+# module-level lookups map old ids to new records for the duration of one import.
+ThreadSafety/ClassInstanceVariable:
+  Exclude:
+    - "lib/imports/**/*"
+ThreadSafety/MutableClassInstanceVariable:
+  Exclude:
+    - "lib/imports/**/*"

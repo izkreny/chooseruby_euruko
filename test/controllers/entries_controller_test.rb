@@ -29,8 +29,9 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     entry = Entry.last
+
     assert_equal "pending", entry.status
-    assert_equal false, entry.published
+    refute entry.published
     assert_equal "Test Resource", entry.title
     assert_redirected_to entry_success_path
   end
@@ -52,6 +53,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     entry = Entry.last
+
     assert_equal "RubyGem", entry.entryable_type
     assert_not_nil entry.entryable
     assert_equal "rspec-core", entry.entryable.gem_name
@@ -76,6 +78,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     entry = Entry.last
+
     assert_equal "Book", entry.entryable_type
     assert_not_nil entry.entryable
     assert_equal "1617295213", entry.entryable.isbn
@@ -101,11 +104,12 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     entry = Entry.last
+
     assert_equal "Community", entry.entryable_type
     assert_not_nil entry.entryable
     assert_equal "Slack", entry.entryable.platform
     assert_equal "https://www.rubyonrails.link", entry.entryable.join_url
-    assert_equal true, entry.entryable.is_official
+    assert entry.entryable.is_official
   end
 
   # Test 3.1.6: POST create with validation failure renders form with errors (422 status)
@@ -165,6 +169,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     entry = Entry.last
+
     assert_equal 2, entry.categories.count
     assert_includes entry.categories, category1
     assert_includes entry.categories, category2
@@ -184,7 +189,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
   # Test 1.1.2: GET /start filters only beginner-level entries
   test "GET start filters only beginner-level entries" do
     # Create test entries with different experience levels
-    beginner_entry = Entry.create!(
+    Entry.create!(
       title: "Rails for Beginners",
       url: "https://example.com/beginner",
       description: "Learn Rails basics",
@@ -194,7 +199,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
       submitter_email: "test@example.com"
     )
 
-    intermediate_entry = Entry.create!(
+    Entry.create!(
       title: "Advanced Rails Patterns",
       url: "https://example.com/intermediate",
       description: "Advanced concepts",
@@ -257,7 +262,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
   # Test 1.1.5: GET /start with search combines beginner filter + query filter
   test "GET start with search combines beginner filter and query filter" do
     # Create beginner entries with different content
-    beginner_testing = Entry.create!(
+    Entry.create!(
       title: "Rails Testing for Beginners",
       url: "https://example.com/testing",
       description: "Learn testing basics",
@@ -267,7 +272,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
       submitter_email: "test@example.com"
     )
 
-    beginner_other = Entry.create!(
+    Entry.create!(
       title: "Rails Routing for Beginners",
       url: "https://example.com/routing",
       description: "Learn routing basics",
@@ -278,7 +283,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     )
 
     # Intermediate entry about testing (should NOT appear)
-    intermediate_testing = Entry.create!(
+    Entry.create!(
       title: "Advanced Testing Patterns",
       url: "https://example.com/advanced-testing",
       description: "Advanced testing techniques",

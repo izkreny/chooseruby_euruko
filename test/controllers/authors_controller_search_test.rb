@@ -11,7 +11,7 @@ class AuthorsController::SearchTest < ActionDispatch::IntegrationTest
       github_url: "https://github.com/matz"
     )
 
-    pending_author = Author.create!(
+    Author.create!(
       name: "Yukihiro Pending",
       status: :pending
     )
@@ -33,6 +33,7 @@ class AuthorsController::SearchTest < ActionDispatch::IntegrationTest
 
     assert_response :success
     json_response = JSON.parse(response.body)
+
     assert_equal [], json_response
   end
 

@@ -13,8 +13,6 @@ module EntriesHelper
       "bg-amber-500"
     when "advanced"
       "bg-rose-500"
-    when "all_levels"
-      "bg-slate-500"
     else
       "bg-slate-500"
     end

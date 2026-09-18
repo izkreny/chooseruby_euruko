@@ -3,7 +3,7 @@
 class Avo::Filters::EntryPublishedFilter < Avo::Filters::BooleanFilter
   self.name = "Published"
 
-  def apply(request, query, value)
+  def apply(_request, query, value)
     selection = value.is_a?(Hash) ? value.stringify_keys : {}
 
     return query.where(published: true) if selection["true"] && !selection["false"]
