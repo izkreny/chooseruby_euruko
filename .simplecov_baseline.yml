@@ -1,0 +1,962 @@
+# Per-file coverage floors. A file that drops below its floor fails the run,
+# and files with no entry fall through to the global per-file minimum.
+# Regenerate with `simplecov ratchet`. Floors only ever tighten.
+app/avo/actions/approve_author_proposal.rb:
+  lines:
+    percent: 0.0
+    missed: 20
+  branches:
+    percent: 0.0
+    missed: 6
+app/avo/actions/approve_authors.rb:
+  lines:
+    percent: 0.0
+    missed: 10
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/actions/approve_entries.rb:
+  lines:
+    percent: 0.0
+    missed: 13
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/actions/publish_entries.rb:
+  lines:
+    percent: 0.0
+    missed: 10
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/actions/reject_author_proposal.rb:
+  lines:
+    percent: 0.0
+    missed: 26
+  branches:
+    percent: 0.0
+    missed: 8
+app/avo/actions/reject_entries.rb:
+  lines:
+    percent: 0.0
+    missed: 15
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/actions/unpublish_entries.rb:
+  lines:
+    percent: 0.0
+    missed: 10
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/filters/author_proposal_status_filter.rb:
+  lines:
+    percent: 0.0
+    missed: 13
+  branches:
+    percent: 0.0
+    missed: 4
+app/avo/filters/author_status_filter.rb:
+  lines:
+    percent: 0.0
+    missed: 9
+  branches:
+    percent: 0.0
+    missed: 3
+app/avo/filters/entry_category_filter.rb:
+  lines:
+    percent: 0.0
+    missed: 7
+  branches:
+    percent: 0.0
+    missed: 2
+app/avo/filters/entry_experience_level_filter.rb:
+  lines:
+    percent: 0.0
+    missed: 7
+  branches:
+    percent: 0.0
+    missed: 2
+app/avo/filters/entry_published_filter.rb:
+  lines:
+    percent: 0.0
+    missed: 11
+  branches:
+    percent: 0.0
+    missed: 10
+app/avo/filters/entry_status_filter.rb:
+  lines:
+    percent: 0.0
+    missed: 11
+  branches:
+    percent: 0.0
+    missed: 4
+app/avo/filters/entry_tags_filter.rb:
+  lines:
+    percent: 77.77
+    missed: 2
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/filters/entry_type_filter.rb:
+  lines:
+    percent: 0.0
+    missed: 7
+  branches:
+    percent: 0.0
+    missed: 2
+app/avo/resources/article.rb:
+  lines:
+    percent: 38.46
+    missed: 8
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/author.rb:
+  lines:
+    percent: 29.03
+    missed: 22
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/author_proposal.rb:
+  lines:
+    percent: 12.69
+    missed: 55
+  branches:
+    percent: 0.0
+    missed: 36
+app/avo/resources/blog.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/book.rb:
+  lines:
+    percent: 33.33
+    missed: 10
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/categories_entry.rb:
+  lines:
+    percent: 36.36
+    missed: 7
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/category.rb:
+  lines:
+    percent: 41.17
+    missed: 10
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/channel.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/community.rb:
+  lines:
+    percent: 38.46
+    missed: 8
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/course.rb:
+  lines:
+    percent: 31.25
+    missed: 11
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/development_environment.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/directory.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/documentation.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/entry.rb:
+  lines:
+    percent: 24.39
+    missed: 31
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/entry_review.rb:
+  lines:
+    percent: 46.15
+    missed: 7
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/framework.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/job_board.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/newsletter.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/podcast.rb:
+  lines:
+    percent: 33.33
+    missed: 10
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/product.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/ruby_gem.rb:
+  lines:
+    percent: 33.33
+    missed: 10
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/testing_resource.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/tool.rb:
+  lines:
+    percent: 35.71
+    missed: 9
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/tutorial.rb:
+  lines:
+    percent: 38.46
+    missed: 8
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/user.rb:
+  lines:
+    percent: 25.0
+    missed: 9
+  branches:
+    percent: 100.0
+    missed: 0
+app/avo/resources/video.rb:
+  lines:
+    percent: 50.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/channels/application_cable/channel.rb:
+  lines:
+    percent: 0.0
+    missed: 2
+  branches:
+    percent: 100.0
+    missed: 0
+app/channels/application_cable/connection.rb:
+  lines:
+    percent: 0.0
+    missed: 13
+  branches:
+    percent: 0.0
+    missed: 6
+app/controllers/application_controller.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/author_proposals_controller.rb:
+  lines:
+    percent: 87.5
+    missed: 3
+  branches:
+    percent: 83.33
+    missed: 1
+app/controllers/authors_controller.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/articles_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/author_proposals_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 0.0
+    missed: 2
+app/controllers/avo/authors_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/blogs_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/books_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/categories_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/categories_entries_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/channels_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/communities_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/courses_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/development_environments_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/directories_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/documentations_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/entries_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/entry_reviews_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/frameworks_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/job_boards_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/newsletters_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/podcasts_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/products_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/ruby_gems_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/testing_resources_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/tools_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/tutorials_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/avo/videos_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 4
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/categories_controller.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/collections_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 18
+  branches:
+    percent: 0.0
+    missed: 4
+app/controllers/communities_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 3
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/concerns/authentication.rb:
+  lines:
+    percent: 0.0
+    missed: 28
+  branches:
+    percent: 0.0
+    missed: 6
+app/controllers/concerns/authentication/session_lookup.rb:
+  lines:
+    percent: 0.0
+    missed: 12
+  branches:
+    percent: 0.0
+    missed: 6
+app/controllers/concerns/authorization.rb:
+  lines:
+    percent: 0.0
+    missed: 10
+  branches:
+    percent: 0.0
+    missed: 4
+app/controllers/concerns/block_banned_requests.rb:
+  lines:
+    percent: 0.0
+    missed: 12
+  branches:
+    percent: 0.0
+    missed: 4
+app/controllers/concerns/set_current_request.rb:
+  lines:
+    percent: 0.0
+    missed: 9
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/csp_reports_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 5
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/entries_controller.rb:
+  lines:
+    percent: 90.19
+    missed: 10
+  branches:
+    percent: 78.26
+    missed: 5
+app/controllers/home_controller.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/pages_controller.rb:
+  lines:
+    percent: 0.0
+    missed: 10
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/resource_types_controller.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/controllers/resources_controller.rb:
+  lines:
+    percent: 70.37
+    missed: 8
+  branches:
+    percent: 83.33
+    missed: 1
+app/controllers/sessions_controller.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/helpers/application_helper.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 83.33
+    missed: 1
+app/helpers/authors_helper.rb:
+  lines:
+    percent: 8.33
+    missed: 22
+  branches:
+    percent: 0.0
+    missed: 20
+app/helpers/entries_helper.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/helpers/resource_type_helper.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/jobs/application_job.rb:
+  lines:
+    percent: 0.0
+    missed: 1
+  branches:
+    percent: 100.0
+    missed: 0
+app/mailers/application_mailer.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/mailers/author_proposal_mailer.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 50.0
+    missed: 3
+app/mailers/resource_submission_mailer.rb:
+  lines:
+    percent: 95.0
+    missed: 1
+  branches:
+    percent: 50.0
+    missed: 2
+app/models/application_record.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/article.rb:
+  lines:
+    percent: 83.33
+    missed: 1
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/author.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 60.0
+    missed: 2
+app/models/author_proposal.rb:
+  lines:
+    percent: 97.0
+    missed: 3
+  branches:
+    percent: 78.57
+    missed: 9
+app/models/ban.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/blog.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/book.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/categories_entry.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/category.rb:
+  lines:
+    percent: 90.0
+    missed: 2
+  branches:
+    percent: 0.0
+    missed: 1
+app/models/channel.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/community.rb:
+  lines:
+    percent: 85.71
+    missed: 1
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/course.rb:
+  lines:
+    percent: 85.71
+    missed: 1
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/current.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/development_environment.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/directory.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/documentation.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/entries_author.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/entry.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 71.42
+    missed: 2
+app/models/entry/related_resources.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 83.33
+    missed: 1
+app/models/entry_review.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/framework.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/job_board.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/newsletter.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/podcast.rb:
+  lines:
+    percent: 83.33
+    missed: 1
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/product.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/ruby_gem.rb:
+  lines:
+    percent: 85.71
+    missed: 1
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/session.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/testing_resource.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/tool.rb:
+  lines:
+    percent: 80.0
+    missed: 1
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/tutorial.rb:
+  lines:
+    percent: 83.33
+    missed: 1
+  branches:
+    percent: 0.0
+    missed: 2
+app/models/user.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/user/bannable.rb:
+  lines:
+    percent: 50.0
+    missed: 9
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/user/role.rb:
+  lines:
+    percent: 75.0
+    missed: 2
+  branches:
+    percent: 100.0
+    missed: 0
+app/models/video.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 0.0
+    missed: 2
+app/queries/author_search_query.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 75.0
+    missed: 2
+app/queries/entry_directory_query.rb:
+  lines:
+    percent: 93.15
+    missed: 5
+  branches:
+    percent: 68.96
+    missed: 9
+app/services/fts_reindexer.rb:
+  lines:
+    percent: 100.0
+    missed: 0
+  branches:
+    percent: 100.0
+    missed: 0
+app/services/github_avatar_service.rb:
+  lines:
+    percent: 88.88
+    missed: 2
+  branches:
+    percent: 100.0
+    missed: 0
+lib/imports/rubyandrailsinfo/helpers.rb:
+  lines:
+    percent: 0.0
+    missed: 37
+  branches:
+    percent: 0.0
+    missed: 6
+lib/imports/rubyandrailsinfo/id_mapper.rb:
+  lines:
+    percent: 0.0
+    missed: 21
+  branches:
+    percent: 100.0
+    missed: 0
+lib/imports/rubyandrailsinfo/sql_parser.rb:
+  lines:
+    percent: 0.0
+    missed: 41
+  branches:
+    percent: 0.0
+    missed: 18
+lib/imports/rubyandrailsinfo/sql_to_yaml_converter.rb:
+  lines:
+    percent: 0.0
+    missed: 62
+  branches:
+    percent: 0.0
+    missed: 12
+lib/imports/rubyandrailsinfo/yaml_importer.rb:
+  lines:
+    percent: 0.0
+    missed: 352
+  branches:
+    percent: 0.0
+    missed: 50
