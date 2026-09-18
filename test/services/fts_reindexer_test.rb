@@ -13,7 +13,7 @@ class FtsReindexerTest < ActiveSupport::TestCase
       url: "https://example.com/entry1",
       status: :approved
     )
-    entry2 = Entry.create!(
+    Entry.create!(
       title: "Test Entry 2",
       url: "https://example.com/entry2",
       status: :approved
@@ -24,6 +24,7 @@ class FtsReindexerTest < ActiveSupport::TestCase
 
     # Verify FTS table is empty
     count = ActiveRecord::Base.connection.execute("SELECT COUNT(*) FROM entries_fts").first["COUNT(*)"]
+
     assert_equal 0, count
 
     # Reindex
@@ -31,6 +32,7 @@ class FtsReindexerTest < ActiveSupport::TestCase
 
     # Verify all entries are in FTS table
     count = ActiveRecord::Base.connection.execute("SELECT COUNT(*) FROM entries_fts").first["COUNT(*)"]
+
     assert_equal 2, count
 
     # Verify entry data is correct
@@ -50,13 +52,14 @@ class FtsReindexerTest < ActiveSupport::TestCase
 
     # Create test authors
     author1 = Author.create!(name: "Yukihiro Matsumoto")
-    author2 = Author.create!(name: "David Heinemeier Hansson")
+    Author.create!(name: "David Heinemeier Hansson")
 
     # Clear FTS table again (authors will auto-sync on create)
     ActiveRecord::Base.connection.execute("DELETE FROM authors_fts")
 
     # Verify FTS table is empty
     count = ActiveRecord::Base.connection.execute("SELECT COUNT(*) FROM authors_fts").first["COUNT(*)"]
+
     assert_equal 0, count
 
     # Reindex
@@ -64,6 +67,7 @@ class FtsReindexerTest < ActiveSupport::TestCase
 
     # Verify all authors are in FTS table
     count = ActiveRecord::Base.connection.execute("SELECT COUNT(*) FROM authors_fts").first["COUNT(*)"]
+
     assert_equal 2, count
 
     # Verify author data is correct
@@ -119,6 +123,7 @@ class FtsReindexerTest < ActiveSupport::TestCase
 
     # Verify all entries are indexed
     count = ActiveRecord::Base.connection.execute("SELECT COUNT(*) FROM entries_fts").first["COUNT(*)"]
+
     assert_operator count, :>=, 5
   end
 end

@@ -13,7 +13,7 @@ class Avo::Actions::RejectEntries < Avo::BaseAction
           placeholder: "Explain why this submission was rejected..."
   end
 
-  def handle(records:, fields:, current_user:, resource:, **args)
+  def handle(records:, fields:, current_user:, resource:, **_args)
     records.each do |resource|
       ActiveRecord::Base.transaction do
         # Update entry: status to rejected

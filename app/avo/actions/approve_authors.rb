@@ -7,7 +7,7 @@ class Avo::Actions::ApproveAuthors < Avo::BaseAction
   self.cancel_button_label = "Cancel"
   self.no_confirmation = false
 
-  def handle(records:, fields:, current_user:, resource:, **args)
+  def handle(records:, fields:, current_user:, resource:, **_args)
     records.each do |author|
       author.update(status: :approved)
     end

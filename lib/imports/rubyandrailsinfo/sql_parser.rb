@@ -48,7 +48,7 @@ module Imports
         lines = copy_block.split("\n")
 
         # Find start (line after COPY statement)
-        start_idx = lines.find_index { |line| line.match?(/FROM stdin;/) }
+        start_idx = lines.find_index { |line| line.include?("FROM stdin;") }
         return [] unless start_idx
 
         # Find end (line with \.)
@@ -61,13 +61,13 @@ module Imports
 
       # Parse data lines into array of hashes
       def parse_data_lines(data_lines, columns)
-        data_lines.map do |line|
+        data_lines.filter_map do |line|
           values = parse_line(line)
           next nil if values.nil? || values.length != columns.length
 
           # Create hash mapping column names to values
           Hash[columns.zip(values)]
-        end.compact
+        end
       end
 
       # Parse a single data line (tab-delimited)

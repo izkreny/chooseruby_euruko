@@ -86,8 +86,6 @@ class EntryDirectoryQuery
 
   def apply_sort(current_scope)
     case sort
-    when "recent", "newest"
-      query.present? ? current_scope : current_scope.order(updated_at: :desc)
     when "popular"
       current_scope.reorder(Arel.sql(popularity_order_sql))
     when "oldest"

@@ -163,7 +163,7 @@ class Avo::Resources::AuthorProposal < Avo::BaseResource
               end
 
               if record.description_text.present?
-                current_desc = record.author&.description if record.author&.respond_to?(:description)
+                current_desc = record.author&.description if record.author.respond_to?(:description)
                 summary << "\nDescription:"
                 summary << "  Current: #{current_desc.presence || '(blank)'}"
                 summary << "  Proposed: #{record.description_text}"
