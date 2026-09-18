@@ -4,6 +4,10 @@ ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
 
+# Defines `cover`, which test classes use to tell mutant which subject they
+# exercise. Without it a normal `bin/rails test` run cannot load them.
+require "mutant/minitest/coverage"
+
 module ActiveSupport
   class TestCase
     # Run tests in parallel with specified workers

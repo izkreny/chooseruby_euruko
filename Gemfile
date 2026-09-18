@@ -73,6 +73,9 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
+  # Mutation testing [https://github.com/mbj/mutant]
+  gem "mutant-minitest", require: false
+
   # A Ruby Gem that adds annotations to your Rails models and route files.
   gem "annotaterb"
 end

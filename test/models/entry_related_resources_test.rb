@@ -3,6 +3,8 @@
 require "test_helper"
 
 class EntryRelatedResourcesTest < ActiveSupport::TestCase
+  cover "Entry::RelatedResources*"
+
   setup do
     # Create categories for testing
     @category1 = categories(:testing)

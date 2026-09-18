@@ -42,3 +42,6 @@
 
 # Agent skills and planning docs
 agents/
+
+# Ignore mutant's run results.
+/.mutant/
