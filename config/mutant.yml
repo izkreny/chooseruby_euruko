@@ -1,0 +1,14 @@
+---
+usage: opensource
+# The default 5s is too tight for the first runs, which pay for Rails booting
+# and the fixtures loading, and a timeout counts as a kill.
+mutation:
+  timeout: 30.0
+
+integration:
+  name: minitest
+requires:
+  - ./test/mutant_helper
+matcher:
+  subjects:
+    - Entry::RelatedResources*

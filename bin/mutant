@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require "rubygems"
+require "bundler/setup"
+
+# mutant's own `mutant` executable shells out to `mutant-ruby`, which is not on
+# PATH under bundler, so load that one directly.
+load Gem.bin_path("mutant", "mutant-ruby")
